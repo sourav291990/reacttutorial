@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './components/common/Card';
 import AddContent from './components/AddContent/AddContent';
+import Login from './components/login/login';
 
 function App() {
   const item1 = {
@@ -18,16 +19,15 @@ function App() {
   };
   return (
     <div className="App">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
-      <div className='row'>
+      <Login></Login>
+      {/* <div className='row'>
         <AddContent></AddContent>
       </div>
       <div className='row'>
         <Card item={item1}></Card>
         <Card item={item2}></Card>
         <Card item={item3}></Card>
-      </div>
+      </div> */}
     </div>
   );
 }
